@@ -6,9 +6,9 @@ Requirements
 [ X ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include a Static Background Image
-[ no ] Feature 2 - Use a unique border-radius
-[ no ] Feature 3 - Use width and margin CSS Properties
+[ yes ] Feature 1 - Include a Static Background Image
+[ yes ] Feature 2 - Use a unique border-radius
+[ yes ] Feature 3 - Use width and margin CSS Properties
 [ no ] Feature 4 - Include at least one more additional HTML page
 -->
 
@@ -25,7 +25,11 @@ Select ONE Additional Feature to Add
 
     <meta charset="utf-8" />
     <style>
-      body{background-color:#f8b6b6}
+      body {
+        background-color: #f8b6b6;
+        background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/black-and-white-stars-abagail-wells.jpg");
+        background-attachment: fixed;
+      }
       h1 {
         font-family: "Sixtyfour Convergence", sans-serif;
         font-optical-sizing: auto;
@@ -34,21 +38,52 @@ Select ONE Additional Feature to Add
         font-variation-settings: "BLED" 0, "SCAN" 0, "XELA" 0, "YELA" 0;
         text-align: center;
         font-size: 100px;
+        text-shadow: -15px -10px 20px red;
       }
       h2 {
-        font-family: "Roboto", system-ui;
         font-size: 35px;
-        text-align: center;
+        border: 3px solid red;
+        border-radius: 15px;
+        background-color: #f8b6b6;
+        display: inline-block;
+        padding: 5px;
+        margin: auto;
+      }
+      img {
+        margin: 50px;
+        border: 3px solid;
+        border-radius: 15px;
+      }
+      .long {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .rob {
+        font-family: "Roboto", system-ui;
         color: #e6451d;
+        text-align: center;
+      }
+      p {
+        font-size: 30px;
+        border: 3px solid red;
+        border-radius: 15px;
+        background-color: #f8b6b6;
       }
     </style>
   </head>
   <body>
     <h1>JOHN TAYLOR</h1>
-    <h2>I Am In Love With Duran Duran's Bass Guitarist</h2>
+    <h2 class="rob">I Am In Love With Duran Duran's Bass Guitarist</h2>
     <img
-      src="https://www.laney.co.uk/blog/wp-content/uploads/2021/10/Laney-Get-The-Sound-Duran-Duran-John-Taylor3.png" width="1500"
+      class="long"
+      src="https://www.laney.co.uk/blog/wp-content/uploads/2021/10/Laney-Get-The-Sound-Duran-Duran-John-Taylor3.png"
+      width="1400"
     />
+    <p class="rob">
+      Nigel John Taylor (June 20, 1960, England) is a musician, best known for
+      being the bass guitarist and also a founding member of Duran Duran.
+    </p>
     <img
       src="https://i.pinimg.com/736x/27/d0/28/27d028e9a7c699529d040974d4a26392.jpg"
     />
@@ -66,12 +101,16 @@ Select ONE Additional Feature to Add
     />
     <img
       src="https://i.pinimg.com/736x/91/70/7b/91707b911bc7dd34ffcabfb5173ee30e.jpg"
+      width="630"
     />
     <img
       src="https://i.redd.it/john-taylor-serving-looks-over-the-years-i-forgot-to-do-v0-ryakcknzwhmd1.jpg?width=527&format=pjpg&auto=webp&s=54df01d27980776f1ae8dd4af6aec11900a7be13"
+      width="655"
     />
     <img
-      src="https://artlogic-res.cloudinary.com/w_1600,h_1600,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/invertedimages/images/view/e5d74ade761794609082bd848f487c8bj.jpg" width="1500"
+      class="long"
+      src="https://artlogic-res.cloudinary.com/w_1600,h_1600,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/invertedimages/images/view/e5d74ade761794609082bd848f487c8bj.jpg"
+      width="1400"
     />
   </body>
 </html>
